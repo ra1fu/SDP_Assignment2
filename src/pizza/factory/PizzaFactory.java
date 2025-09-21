@@ -22,7 +22,7 @@ public abstract class PizzaFactory {
         Pizza pizza = createPizza(type);
 
         if (pizza == null) {
-            System.out.println("❌ Sorry, we don't have this type of pizza: " + type);
+            System.out.println("Sorry, we don't have this type of pizza: " + type);
             return null;
         }
 
@@ -42,3 +42,4 @@ public abstract class PizzaFactory {
      */
     protected abstract Pizza createPizza(String type);
 }
+
